@@ -86,7 +86,7 @@ class MainActivity : Activity() {
         searchBox = EditText(this).apply {
             setText("SIMATIC")
             textSize = 13f
-            singleLine = true
+            isSingleLine = true
             setTextColor(0xFFF1F5F9.toInt())
             setHintTextColor(0xFF475569.toInt())
             hint = "مثال: S7-400"
@@ -137,7 +137,7 @@ class MainActivity : Activity() {
         val filterBox = EditText(this).apply {
             hint = "فیلتر در نتایج..."
             textSize = 13f
-            singleLine = true
+            isSingleLine = true
             setTextColor(0xFFF1F5F9.toInt())
             setHintTextColor(0xFF475569.toInt())
             setPadding(dp(14), dp(11), dp(14), dp(11))
