@@ -15,15 +15,11 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
       
-      - uses: gradle/actions/setup-gradle@v3
-        with:
-          gradle-version: '7.5'
-      
       - name: Make gradlew executable
         run: chmod +x ./gradlew
       
       - name: Build APK
-        run: gradle assembleDebug
+        run: ./gradlew assembleDebug --stacktrace 2>&1 | tail -50
       
       - uses: actions/upload-artifact@v4
         with:
