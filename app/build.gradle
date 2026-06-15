@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'com.manouchehr.momenicert'
-    compileSdk 35
+    compileSdk 34
 
     defaultConfig {
         applicationId 'com.manouchehr.momenicert'
         minSdk 23
-        targetSdk 35
+        targetSdk 34
         versionCode 1
         versionName '1.0'
     }
@@ -18,11 +18,14 @@ android {
     buildTypes {
         release {
             minifyEnabled false
+            signingConfig signingConfigs.debug
         }
     }
-    kotlinOptions { jvmTarget = '1.8' }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
 }
 
 dependencies {
-    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.9.0'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.8.0'
 }
