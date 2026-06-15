@@ -11,8 +11,8 @@ android {
         applicationId 'com.manouchehr.momenicert'
         minSdk 23
         targetSdk 34
-        versionCode 2
-        versionName '1.1'
+        versionCode 3
+        versionName '1.2'
     }
 
     buildTypes {
@@ -27,5 +27,4 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.appcompat:appcompat:1.4.0'
 }
